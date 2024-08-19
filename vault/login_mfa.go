@@ -2074,8 +2074,7 @@ func (c *Core) validateOkta(ctx context.Context, mConfig *mfa.Config, username s
 		// the VerifyFactor respone. This code effectively reimplements that method.
 		// client.UserFactorAPI.GetFactorTransactionStatus(client.GetConfig().Context, user.GetId(), userFactor.GetId())
 
-		client.
-			req, err := rq.WithAccept("application/json").WithContentType("application/json").NewRequest("GET", url.String(), nil)
+		req, err := rq.WithAccept("application/json").WithContentType("application/json").NewRequest("GET", url.String(), nil)
 		if err != nil {
 			return err
 		}
