@@ -232,6 +232,7 @@ require (
 	cel.dev/expr v0.15.0 // indirect
 	cloud.google.com/go/longrunning v0.6.0 // indirect
 	github.com/containerd/containerd v1.7.20 // indirect
+	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
 	github.com/hashicorp/go-secure-stdlib/httputil v0.1.0 // indirect
 	github.com/lestrrat-go/backoff/v2 v2.0.8 // indirect
@@ -245,7 +246,6 @@ require (
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	golang.org/x/xerrors v0.0.0-20240716161551-93cc26a95ae9 // indirect
-	gopkg.in/go-jose/go-jose.v2 v2.6.3 // indirect
 )
 
 require (
