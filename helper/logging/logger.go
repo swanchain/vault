@@ -167,6 +167,7 @@ func Setup(config *LogConfig, w io.Writer) (hclog.InterceptLogger, error) {
 		IndependentLevels: true,
 		Output:            io.MultiWriter(writers...),
 		JSONFormat:        config.isFormatJson(),
+		IncludeLocation:   true,
 	})
 
 	return logger, nil

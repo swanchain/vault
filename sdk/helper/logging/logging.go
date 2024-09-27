@@ -49,6 +49,7 @@ func NewVaultLoggerWithWriter(w io.Writer, level log.Level) log.Logger {
 		IndependentLevels: true,
 		Output:            w,
 		JSONFormat:        ParseEnvLogFormat() == JSONFormat,
+		IncludeLocation:   true,
 	}
 	return log.New(opts)
 }
